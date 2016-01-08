@@ -1,0 +1,103 @@
+= Book Name
+Author Name
+:encoding: utf-8
+:lang: es
+:toc: right
+:numbered:
+:doctype: book
+
+preamble text
+
+== Header 1
+=== Header 2
+==== Header 3
+
+
+Paragraph
+
+Another paragraph
+
+_italic_
+
+*bold*
+
+`monospace`
+
+http://www.google.com[Hyperlink^]
+
+image::http://asciidoctor.org/images/octocat.jpg[title = "Octocat"]
+
+== Lists
+
+**Unordered lists**
+
+* item 1
+** item 1.2
+* item 2
+
+**Ordered lists**
+
+. item 1
+.. item 1.1
+. item 2
+
+**Labeled lists**
+
+CPU:: The brain of the computer.
+Hard drive:: Permanent storage for operating system and/or user files.
+RAM:: Temporarily stores information the CPU uses during operation.
+
+== Code
+
+[source, language = "java"]
+----
+/**
+ * @author John Doe <john.doe@organization.com>
+ * @version 1.0
+*/
+package com.organization.project; // <1>
+
+public class SampleClass { // <2>
+	public static void main(String[] args) {
+		System.out.println("Hello");
+    }
+}
+----
+<1> First annotation
+<2> Second annotation
+
+== Tables
+
+[cols="1,2,3", options="header"] 
+.Using tables. **Caution: Numbers in header set the column width**
+|===
+|First
+|Second
+|Third
+
+|Item 1
+|Description 1
+|Extended description 1
+
+
+|Item 2
+|Description 2
+|Extended description 2
+|===
+
+== Admonition blocks
+
+[NOTE]
+====
+Sample NOTE block.
+====
+
+[TIP]
+====
+Sample TIP block. WARNING, CAUTION and IMPORTANT can also be used
+====
+
+**Videos**
+
+video::2goMtz_vdtM[youtube, width=800, height=500]
+
