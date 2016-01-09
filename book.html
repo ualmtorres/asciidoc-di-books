@@ -5,8 +5,8 @@
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.4-dev">
-<meta name="author" content="Gestión de Grandes Volúmenes de datos">
-<title>Usando MongoDB y Java</title>
+<meta name="author" content="Subject Name">
+<title>Article Name</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
@@ -2132,31 +2132,25 @@ p {
 </head>
 <body class="book toc2 toc-right">
 <div id="header">
-<h1>Usando MongoDB y Java</h1>
+<h1>Article Name</h1>
 <div class="details">
-<span id="author" class="author">Gestión de Grandes Volúmenes de datos</span><br>
-<span id="revdate">Manuel Torres &lt;mtorres@ual.es&gt;</span>
+<span id="author" class="author">Subject Name</span><br>
+<span id="revdate">Author1 Name and Author2 Name &lt;john.doe@organization.com&gt; &lt;john.doe@organization.com&gt;</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Tabla de contenidos</div>
-<ul class="sectlevel0">
-<li><a href="#trueusando-mongodb-y-java">Usando MongoDB y Java</a>
 <ul class="sectlevel1">
-<li><a href="#truedependencias-maven">1. Dependencias Maven</a></li>
-<li><a href="#trueconexi-n-a-mongodb">2. Conexión a MongoDB</a></li>
-<li><a href="#trueselecci-n-de-la-colecci-n">3. Selección de la colección</a></li>
-<li><a href="#truecreaci-n-de-documentos">4. Creación de documentos</a></li>
-<li><a href="#trueinserci-n-de-documentos">5. Inserción de documentos</a>
-<ul class="sectlevel2">
-<li><a href="#trueb-squeda-de-documentos">5.1. Búsqueda de documentos</a></li>
-<li><a href="#trueordenaci-n-proyecci-n-skip-y-limit">5.2. Ordenación, proyección, skip y limit</a></li>
-<li><a href="#trueeliminaci-n-de-documentos">5.3. Eliminación de documentos</a></li>
-<li><a href="#trueactualizaci-n-de-documentos">5.4. Actualización de documentos</a></li>
-<li><a href="#trueframework-de-agregaci-n">5.5. Framework de agregación</a></li>
-</ul>
-</li>
-<li><a href="#trueresumen">6. Resumen</a></li>
+<li><a href="#truet-tulo-del-apartado">1. Título del apartado</a></li>
+<li><a href="#trueresumen">2. Resumen</a></li>
 <li><a href="#truereferencias">Referencias</a></li>
+<li><a href="#truesintaxis-b-sica">3. Sintaxis básica</a></li>
+<li><a href="#trueheader-level-1">4. Header Level 1</a>
+<ul class="sectlevel2">
+<li><a href="#trueheader-level-2">4.1. Header Level 2</a></li>
+<li><a href="#truelists">4.2. Lists</a></li>
+<li><a href="#truecode">4.3. Code</a></li>
+<li><a href="#truetables">4.4. Tables</a></li>
+<li><a href="#trueadmonition-blocks">4.5. Admonition blocks</a></li>
 </ul>
 </li>
 </ul>
@@ -2167,255 +2161,41 @@ p {
 <div class="sectionbody">
 <div class="quoteblock abstract">
 <blockquote>
-Introducción a la interacción con MongoDB mediante Java. Se describe cómo realizar las operaciones básicas, como son la conexión, selección de conexiones, operaciones CRUD sobre documentos, ordenación de resultados y uso del framework de agregación.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 </blockquote>
 </div>
 <div class="ulist">
 <div class="title">Objetivos</div>
 <ul>
 <li>
-<p>Establecer conexiones con bases de datos MongoDB</p>
+<p>Objetivo 1</p>
 </li>
 <li>
-<p>Realizar operaciones CRUD con MongoDB</p>
+<p>Objetivo 2</p>
 </li>
 <li>
-<p>Ordenar y limitar resultados</p>
-</li>
-<li>
-<p>Realizar operaciones con el framework de agregación</p>
+<p>Objetivo 3</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
-<h1 id="trueusando-mongodb-y-java" class="sect0"><a class="anchor" href="#trueusando-mongodb-y-java"></a>Usando MongoDB y Java</h1>
-<div class="openblock partintro">
-<div class="content">
+<div class="sect1">
+<h2 id="truet-tulo-del-apartado"><a class="anchor" href="#truet-tulo-del-apartado"></a>1. Título del apartado</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>MongoDB nos ofrece gran cantidad de clientes para interactuar con él mediante gran cantidad de lenguajes de programación <a href="http://api.mongodb.org/">(Drivers MongoDB)</a>.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
 <div class="paragraph">
-<p>En nuestro ejemplo interactuaremos con MongoDB mediante el driver Java para MongoDB.</p>
+<p>Esto es una una cita a una referencia <a href="#taoup">[taoup]</a></p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="truedependencias-maven"><a class="anchor" href="#truedependencias-maven"></a>1. Dependencias Maven</h2>
+<h2 id="trueresumen"><a class="anchor" href="#trueresumen"></a>2. Resumen</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Comenzaremos creando un proyecto Maven incluyendo la depedencia siguiente en el <code>pom.xml</code>. En el momento de crear este documento (Mayo 2015) la última versión del driver es la 3.0.1.</p>
-</div>
-<div class="paragraph">
-<p>
-<script src="https://gist.github.com/ualmtorres/3731484ea57c8522e0cd.js"></script>
-</p>
-</div>
-<div class="paragraph">
-<p>No obstante, si no te sientes cómodo con Maven y prefieres incluir el archivo JAR en el proyecto puedes <a href="http://central.maven.org/maven2/org/mongodb/mongo-java-driver">descargar el driver JDBC para MongoDB</a>.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="trueconexi-n-a-mongodb"><a class="anchor" href="#trueconexi-n-a-mongodb"></a>2. Conexión a MongoDB</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>La forma básica de obtener una conexión a MongoDB es instanciando directamente la clase <code>MongoClient</code>. Si no indicamos nada, nos conectaremos al host y puerto por defecto.</p>
-</div>
-<div class="paragraph">
-<p>
-<script src="https://gist.github.com/ualmtorres/30c9e4f9598907c71276.js"></script>
-</p>
-</div>
-<div class="paragraph">
-<p>El host y el puerto se pueden pasar como parámetro al constructor de <code>MongoClient</code>.</p>
-</div>
-<div class="paragraph">
-<p>La base de datos será seleccionada a través del método <code>getDatabase()</code> de la clase <code>MongoClient</code>.</p>
-</div>
-<div class="paragraph">
-<p>
-<script src="https://gist.github.com/ualmtorres/f988be29982f3c12c79d.js"></script>
-</p>
-</div>
-<div class="paragraph">
-<p>También podemos crear la conexión usando un objeto <code>ServerAddress</code> al que pasaremos el host y el puerto.</p>
-</div>
-<div class="paragraph">
-<p>
-<script src="https://gist.github.com/ualmtorres/b6e91174e11bc756ceed.js"></script>
-</p>
-</div>
-<div class="paragraph">
-<p>La desconexión de MongoDB se hace mediante el método <code>close()</code> de la clase <code>MongoClient</code>.</p>
-</div>
-<div class="paragraph">
-<p>
-<script src="https://gist.github.com/ualmtorres/8f1bc9a311a9bafdf462.js"></script>
-</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="trueselecci-n-de-la-colecci-n"><a class="anchor" href="#trueselecci-n-de-la-colecci-n"></a>3. Selección de la colección</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>La clase <code>MongoDatabase</code> nos ofrece el método <code>getDatabase()</code> que nos permite seleccionar la base de datos con la que queremos trabajar. La clase <code>MongoDatabase</code> nos ofrece otros métodos interesantes aplicables a la base de datos (p.e. para cuestiones relacioneadas con <strong>write  concern</strong>)</p>
-</div>
-<div class="paragraph">
-<p>A continuación vemos cómo crear un objeto para una base de datos de ejemplo denominada <code>ggvdTest</code>.</p>
-</div>
-<div class="paragraph">
-<p>
-<script src="https://gist.github.com/ualmtorres/cf00fedf513377377543.js"></script>
-</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="truecreaci-n-de-documentos"><a class="anchor" href="#truecreaci-n-de-documentos"></a>4. Creación de documentos</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>En la interacción con MongoDB usando el driver de Java se suele utilizar para casi todo la clase <code>Document</code>. Utilizaremos esta clase no sólo para los documentos que tengamos que introducir, sino para definir los criterios de eliminación, actualización, ordenación, y demás.</p>
-</div>
-<div class="paragraph">
-<p>El constructor de la clase <code>Document</code> admite dos parámetros: una clave y un valor. Para crear documentos con más de pareja clave-valor aplicaremos el método <code>append()</code> al constructor tantas veces como sea necesario encadenando las llamadas con un punto (<code>.</code>). Esta será la técnica básica para construir las listas JSON.</p>
-</div>
-<div class="paragraph">
-<p>
-<script src="https://gist.github.com/ualmtorres/d6759f5ceec5649217e7.js"></script>
-</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="trueinserci-n-de-documentos"><a class="anchor" href="#trueinserci-n-de-documentos"></a>5. Inserción de documentos</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Los documentos se insertarán con los métodos <code>insertOne()</code> o <code>insertMany()</code> dependiendo de si queremos insertar uno o varios documentos simultáneamente. Ambos métodos se aplican sobre la colección correspondiente.</p>
-</div>
-<div class="paragraph">
-<p>A continuación se muestran un par de métodos para insertar documentos con <code>insertOne()</code>. El primer método inserta un documento sencillo. El segundo método inserta un documento <strong>complejo</strong> con un array en una clave y un documento anidado en otra.</p>
-</div>
-<div class="paragraph">
-<p>
-<script src="https://gist.github.com/ualmtorres/772dea93b5bd4489753e.js"></script>
-</p>
-</div>
-<div class="paragraph">
-<p>El código siguiente ilustra un ejemplo para insertar una lista de documentos con <code>insertMany()</code>.</p>
-</div>
-<div class="paragraph">
-<p>
-<script src="https://gist.github.com/ualmtorres/4270d8d35875eec40eb5.js"></script>
-</p>
-</div>
-<div class="sect2">
-<h3 id="trueb-squeda-de-documentos"><a class="anchor" href="#trueb-squeda-de-documentos"></a>5.1. Búsqueda de documentos</h3>
-<div class="paragraph">
-<p>La búsqueda de documentos se realiza mediante el método <code>find()</code> aplicado a una colección. El método <code>find()</code> devuelve un objeto de la clase <code>FindIterable</code>. Sobre un objeto <code>FindIterable</code> podemos usar el método <code>first()</code>, que como su nombre indica nos devuelve el primer elemento de un objeto <code>FindIterable</code>.</p>
-</div>
-<div class="paragraph">
-<p>A continuación se muestra un ejemplo combinado con el método <code>toJson()</code> que muestra el resultado de una consulta en forma de documento en JSON.</p>
-</div>
-<div class="paragraph">
-<p>
-<script src="https://gist.github.com/ualmtorres/96548d1329318724aa2d.js"></script>
-</p>
-</div>
-<div class="paragraph">
-<p>Si en lugar de recuperar el primer documento queremos recorrer el conjunto de resultados (p.e. para mostrarlos), tenemos que convertir el objeto <code>FindIterable</code> que devuelve el método <code>find()</code> en un <strong>cursor</strong>. Para ello usaremos el método <code>iterator()</code>. El método <code>iterator()</code> devuelve un objeto <code>MongoCursor</code> que podremos recorrer con el método <code>next()</code>.</p>
-</div>
-<div class="paragraph">
-<p>Una vez sobre el documento, podremos aplicar métodos <code>getString()</code>, <code>getInteger()</code> y demás, similares a los usados con JDBC.</p>
-</div>
-<div class="paragraph">
-<p>
-<script src="https://gist.github.com/ualmtorres/f9adae627e7d7eb63d5b.js"></script>
-</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="trueordenaci-n-proyecci-n-skip-y-limit"><a class="anchor" href="#trueordenaci-n-proyecci-n-skip-y-limit"></a>5.2. Ordenación, proyección, skip y limit</h3>
-<div class="paragraph">
-<p>Además de <code>first()</code>, la clase <code>FindIterable</code> nos proporciona métodos interesantes, como son los métodos para la ordenación (<code>sort()</code>), proyección (<code>projection()</code>), salto (<code>skip()</code>) y limitación (<code>limit()</code>).</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>sort()</code> toma como un documento como argumento indicando los campos por los que se quiere ordenar y el criterio de ordenación: ascendente (1) o descendente (-1), de la misma forma que en la shell de MongoDB.</p>
-</li>
-<li>
-<p><code>projection()</code> toma como un documento como argumento indicando los campos que se quieren mostrar (1) u ocultar (0), de la misma forma que en la shell de MongoDB.</p>
-</li>
-<li>
-<p><code>skip()</code> y <code>limit()</code> toman un entero como argumento que representa el número de documentos a saltar y limitar, respectivamente.</p>
-</li>
-</ul>
-</div>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p><code>sort()</code>, <code>projection()</code>, <code>skip()</code> y <code>limit()</code> devuelven un objeto <code>FindIterable</code>. Para poder recorrerlo hay que convertirlo en un <strong>cursor</strong> aplicando el método <code>iterator()</code>.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>
-<script src="https://gist.github.com/ualmtorres/176a8d2b071ec2e19b64.js"></script>
-</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="trueeliminaci-n-de-documentos"><a class="anchor" href="#trueeliminaci-n-de-documentos"></a>5.3. Eliminación de documentos</h3>
-<div class="paragraph">
-<p>Para eliminar documentos con el driver de MongoDB podemos usar varios métodos (<code>deleteOne()</code>, <code>deleteMany()</code> y <code>findOneAndDelete()</code>). <code>findAndDelete()</code> permite realizar de forma atómica la búsqueda de los documentos a eliminar y su posterior eliminación. A este método le pasaremos el documento con los criterios, y de forma optativa las opciones de eliminación.</p>
-</div>
-<div class="paragraph">
-<p>
-<script src="https://gist.github.com/ualmtorres/f6d9bf154f6e349593a7.js"></script>
-</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="trueactualizaci-n-de-documentos"><a class="anchor" href="#trueactualizaci-n-de-documentos"></a>5.4. Actualización de documentos</h3>
-<div class="paragraph">
-<p>Para actualizar documentos con el driver de MongoDB podemos usar varios métodos (<code>updateOne()</code>, <code>updateMany()</code> y <code>findOneAndUpdate()</code>), que como se puede comprobar guardan un gran parecido con sus homólogos para eliminar documentos. <code>findAndUpdate()</code> permite realizar de forma atómica la búsqueda de los documentos a eliminar y su posterior eliminación. A este método le pasaremos el documento con los criterios, la actualización y de forma optativa las opciones de actualización.</p>
-</div>
-<div class="paragraph">
-<p>
-<script src="https://gist.github.com/ualmtorres/f971548f9ee900eadb19.js"></script>
-</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="trueframework-de-agregaci-n"><a class="anchor" href="#trueframework-de-agregaci-n"></a>5.5. Framework de agregación</h3>
-<div class="paragraph">
-<p>Las operaciones relacionadas con el framework de agregación se realizan con el método <code>aggregate()</code>. A este método le proporcionaremos el <strong>pipeline</strong> de operaciones (<code>$match</code>, <code>$project</code>, <code>$group</code>, <code>$sort</code>, &#8230;&#8203;) en forma de lista. El método devolverá un objeto <code>AggregationIterable</code> que se podrá recorrer como un <strong>cursor</strong>.</p>
-</div>
-<div class="paragraph">
-<p>
-<script src="https://gist.github.com/ualmtorres/99f2d7a426a1b3b8294b.js"></script>
-</p>
-</div>
-<div class="paragraph">
-<p>Puedes <a href="https://github.com/ualmtorres/MongoDBJava">descargar el código de este tutorial</a> del GitHub de este proyecto.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="trueresumen"><a class="anchor" href="#trueresumen"></a>6. Resumen</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Hemos descrirto las interacción básica con MongoDB mediante Java. Se ha descrito cómo realizar las operaciones básicas, como son la conexión, selección de conexiones, operaciones CRUD sobre documentos, ordenación de resultados y uso del framework de agregación.</p>
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
 </div>
 </div>
 </div>
@@ -2425,19 +2205,354 @@ Introducción a la interacción con MongoDB mediante Java. Se describe cómo rea
 <div class="ulist bibliography">
 <ul class="bibliography">
 <li>
-<p><a id="mongodbjava"></a>[mongodbjava] MongoDB. Getting Started with MongoDB (Java Edition). [online] Disponible en: <a href="https://docs.mongodb.org/getting-started/java" class="bare">https://docs.mongodb.org/getting-started/java</a>.</p>
+<p><a id="taoup"></a>[taoup] Eric Steven Raymond. 'The Art of Unix
+Programming'. Addison-Wesley. ISBN 0-13-142901-9.</p>
 </li>
 <li>
-<p><a id="chodorow"></a>[chodorow] Kristina Chodorow. 'MongoDB. The Definitive Guide'. O&#8217;Reilly. ISBN  978-1449344689.</p>
+<p><a id="walsh-muellner"></a>[walsh-muellner] Norman Walsh &amp; Leonard Muellner.
+'DocBook - The Definitive Guide'. O&#8217;Reilly &amp; Associates. 1999.
+ISBN 1-56592-580-7.</p>
 </li>
 </ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="truesintaxis-b-sica"><a class="anchor" href="#truesintaxis-b-sica"></a>3. Sintaxis básica</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="trueheader-level-1"><a class="anchor" href="#trueheader-level-1"></a>4. Header Level 1</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>## Header Level 1</code></pre>
+</div>
+</div>
+<div class="sect2">
+<h3 id="trueheader-level-2"><a class="anchor" href="#trueheader-level-2"></a>4.1. Header Level 2</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>### Header Level 2</code></pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="trueheader-level-3"><a class="anchor" href="#trueheader-level-3"></a>4.1.1. Header Level 3</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>#### Header Level 3</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Paragraphs are separated by a blank line</p>
+</div>
+<div class="paragraph">
+<p>Another paragraph</p>
+</div>
+<div class="paragraph">
+<p><em>italic</em></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>_italic_</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>bold</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>*bold*</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>monospace</code></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>`monospace`</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><a href="http://www.google.com" target="_blank">Hyperlink</a></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>http://www.google.com[Hyperlink^]</code></pre>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/di.png" alt="di.png">
+</div>
+<div class="title">Figure 1. Images are stored in <code>images</code> folder</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>image::di.png[title = "Images are stored in `images` folder"]</code></pre>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="http://asciidoctor.org/images/octocat.jpg" alt="octocat.jpg">
+</div>
+<div class="title">Figure 2. External image</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>image::http://asciidoctor.org/images/octocat.jpg[title = "External image"]</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="truelists"><a class="anchor" href="#truelists"></a>4.2. Lists</h3>
+<div class="paragraph">
+<p><strong>Unordered lists</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>item 1</p>
+<div class="ulist">
+<ul>
+<li>
+<p>item 1.2</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>item 2</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>* item 1
+** item 1.2
+* item 2</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Ordered lists</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>item 1</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>item 1.1</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>item 2</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>. item 1
+.. item 1.1
+. item 2</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Labeled lists</strong></p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">CPU</dt>
+<dd>
+<p>The brain of the computer.</p>
+</dd>
+<dt class="hdlist1">Hard drive</dt>
+<dd>
+<p>Permanent storage for operating system and/or user files.</p>
+</dd>
+<dt class="hdlist1">RAM</dt>
+<dd>
+<p>Temporarily stores information the CPU uses during operation.</p>
+</dd>
+</dl>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>CPU:: The brain of the computer.
+Hard drive:: Permanent storage for operating system and/or user files.
+RAM:: Temporarily stores information the CPU uses during operation.</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="truecode"><a class="anchor" href="#truecode"></a>4.3. Code</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>/**
+ * @author John Doe &lt;john.doe@organization.com&gt;
+ * @version 1.0
+*/
+package com.organization.project; <i class="conum" data-value="1"></i><b>(1)</b>
+
+public class SampleClass { <i class="conum" data-value="2"></i><b>(2)</b>
+	public static void main(String[] args) {
+		System.out.println("Hello");
+    }
+}</code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>First annotation</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Second annotation</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>[source]
+----
+/**
+ * @author John Doe &lt;john.doe@organization.com&gt;
+ * @version 1.0
+*/
+package com.organization.project; // &lt;1&gt;
+
+public class SampleClass { // &lt;2&gt;
+	public static void main(String[] args) {
+		System.out.println("Hello");
+    }
+}
+----
+&lt;1&gt; First annotation
+&lt;2&gt; Second annotation</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="truetables"><a class="anchor" href="#truetables"></a>4.4. Tables</h3>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 1. Using tables. <strong>Caution: Numbers in header set the column width</strong></caption>
+<colgroup>
+<col style="width: 16%;">
+<col style="width: 33%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">First</th>
+<th class="tableblock halign-left valign-top">Second</th>
+<th class="tableblock halign-left valign-top">Third</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item 1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description 1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Extended description 1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item 2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description 2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Extended description 2</p></td>
+</tr>
+</tbody>
+</table>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>[cols="1,2,3", options="header"]
+.Using tables. **Caution: Numbers in header set the column width**
+|===
+|First
+|Second
+|Third
+
+|Item 1
+|Description 1
+|Extended description 1
+
+
+|Item 2
+|Description 2
+|Extended description 2
+|===</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="trueadmonition-blocks"><a class="anchor" href="#trueadmonition-blocks"></a>4.5. Admonition blocks</h3>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Sample NOTE block.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Sample TIP block. WARNING, CAUTION and IMPORTANT can also be used</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>[IMPORTANT]
+====
+Sample NOTE block.
+====
+
+[TIP]
+====
+Sample TIP block. WARNING, CAUTION and IMPORTANT can also be used
+====</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Videos</strong></p>
+</div>
+<div class="videoblock">
+<div class="content">
+<iframe width="800" height="500" src="https://www.youtube.com/embed/2goMtz_vdtM?rel=0&amp;hl=es" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>video::2goMtz_vdtM[youtube, width=800, height=500]</code></pre>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-01-09 09:27:58 CET
+Last updated 2016-01-09 09:33:20 CET
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">

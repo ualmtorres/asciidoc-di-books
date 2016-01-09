@@ -1,33 +1,144 @@
-= Book Name
-Author Name
+////
+Codificación, idioma, tabla de contenidos, tipo de documento
+////
 :encoding: utf-8
 :lang: es
 :toc: right
-:numbered:
+:toc-title: Tabla de contenidos
 :doctype: book
+:imagesdir: ./images
 
-preamble text
+////
+Nombre y título del trabajo
+////
+# Article Name
+Subject Name 
+Author1 Name and Author2 Name <john.doe@organization.com> <john.doe@organization.com>
 
-== Header 1
-=== Header 2
-==== Header 3
 
+// Entrar en modo no numerado de apartados
+:numbered!: 
 
-Paragraph
+[abstract]
+////
+COLOCA A CONTINUACION EL RESUMEN
+////
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+////
+COLOCA A CONTINUACION LOS OBJETIVOS
+////
+.Objetivos
+* Objetivo 1
+* Objetivo 2
+* Objetivo 3
+
+// Entrar en modo numerado de apartados
+:numbered:
+//// 
+COLOCA A CONTINUACION EL TITULO DEL APARTADO
+////
+== Título del apartado
+
+//// 
+COLOCA A CONTINUACION EL CONTENIDO DEL APARTADO
+////
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Esto es una una cita a una referencia <<taoup>>
+
+## Resumen
+
+////
+COLOCA A CONTINUACION EL RESUMEN O CONCLUSIONES
+////
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+
+// Entrar en modo no numerado de apartados
+:numbered!:
+
+## Referencias
+[bibliography]
+////
+COLOCA A CONTINUACION LAS REFERENCIAS
+////
+
+* [[[taoup]]] Eric Steven Raymond. 'The Art of Unix
+  Programming'. Addison-Wesley. ISBN 0-13-142901-9.
+  
+* [[[walsh-muellner]]] Norman Walsh & Leonard Muellner.
+  'DocBook - The Definitive Guide'. O'Reilly & Associates. 1999.
+  ISBN 1-56592-580-7.
+
+// Entrar en modo numerado de apartados
+:numbered:
+## Sintaxis básica
+
+## Header Level 1
+// Código Asciidoc
+```
+## Header Level 1
+```
+
+### Header Level 2
+// Código Asciidoc
+```
+### Header Level 2
+```
+
+#### Header Level 3
+// Código Asciidoc
+```
+#### Header Level 3
+```
+
+Paragraphs are separated by a blank line
 
 Another paragraph
 
 _italic_
 
+// Código Asciidoc
+```
+_italic_
+```
+
 *bold*
+
+// Código Asciidoc
+```
+*bold*
+```
 
 `monospace`
 
+// Código Asciidoc
+```
+`monospace`
+```
+
 http://www.google.com[Hyperlink^]
 
-image::http://asciidoctor.org/images/octocat.jpg[title = "Octocat"]
+// Código Asciidoc
+```
+http://www.google.com[Hyperlink^]
+```
 
-== Lists
+image::di.png[title = "Images are stored in `images` folder"]
+
+// Código Asciidoc
+```
+image::di.png[title = "Images are stored in `images` folder"]
+```
+
+image::http://asciidoctor.org/images/octocat.jpg[title = "External image"]
+
+// Código Asciidoc
+```
+image::http://asciidoctor.org/images/octocat.jpg[title = "External image"]
+```
+
+### Lists
 
 **Unordered lists**
 
@@ -35,11 +146,25 @@ image::http://asciidoctor.org/images/octocat.jpg[title = "Octocat"]
 ** item 1.2
 * item 2
 
+// Código Asciidoc
+```
+* item 1
+** item 1.2
+* item 2
+```
+
 **Ordered lists**
 
 . item 1
 .. item 1.1
 . item 2
+
+// Código Asciidoc
+```
+. item 1
+.. item 1.1
+. item 2
+```
 
 **Labeled lists**
 
@@ -47,9 +172,19 @@ CPU:: The brain of the computer.
 Hard drive:: Permanent storage for operating system and/or user files.
 RAM:: Temporarily stores information the CPU uses during operation.
 
-== Code
+// Código Asciidoc
+```
+CPU:: The brain of the computer.
+Hard drive:: Permanent storage for operating system and/or user files.
+RAM:: Temporarily stores information the CPU uses during operation.
+```
 
-[source, language = "java"]
+### Code
+
+[source]
+////
+Code may be annotated using <1>, <2>, and so on, preceded by the comment characters used in the used programming language
+////
 ----
 /**
  * @author John Doe <john.doe@organization.com>
@@ -66,7 +201,27 @@ public class SampleClass { // <2>
 <1> First annotation
 <2> Second annotation
 
-== Tables
+// Código Asciidoc
+```
+[source]
+----
+/**
+ * @author John Doe <john.doe@organization.com>
+ * @version 1.0
+*/
+package com.organization.project; // \<1>
+
+public class SampleClass { // \<2>
+	public static void main(String[] args) {
+		System.out.println("Hello");
+    }
+}
+----
+<1> First annotation
+<2> Second annotation
+```
+
+### Tables
 
 [cols="1,2,3", options="header"] 
 .Using tables. **Caution: Numbers in header set the column width**
@@ -85,9 +240,29 @@ public class SampleClass { // <2>
 |Extended description 2
 |===
 
-== Admonition blocks
+// Código Asciidoc
+```
+[cols="1,2,3", options="header"] 
+.Using tables. **Caution: Numbers in header set the column width**
+|===
+|First
+|Second
+|Third
 
-[NOTE]
+|Item 1
+|Description 1
+|Extended description 1
+
+
+|Item 2
+|Description 2
+|Extended description 2
+|===
+```
+
+### Admonition blocks
+
+[IMPORTANT]
 ====
 Sample NOTE block.
 ====
@@ -97,7 +272,31 @@ Sample NOTE block.
 Sample TIP block. WARNING, CAUTION and IMPORTANT can also be used
 ====
 
+// Código Asciidoc
+```
+[IMPORTANT]
+====
+Sample NOTE block.
+====
+
+[TIP]
+====
+Sample TIP block. WARNING, CAUTION and IMPORTANT can also be used
+====
+```
+
+
+////
+CAUTION
+Videos cannot be included in *.adoc to generate PDF files.
+Videos should be used only to generate HTML
+////
+
 **Videos**
 
 video::2goMtz_vdtM[youtube, width=800, height=500]
 
+// Código Asciidoc
+```
+video::2goMtz_vdtM[youtube, width=800, height=500]
+```

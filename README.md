@@ -18,6 +18,8 @@ gem install asciidoctor
 
 ## Consideraciones
 
+* Las imágenes se guardarán en la carpeta `images`.
+
 * Si el objetivo es generar un documento HTML a partir del archivo `*.adoc`, se pueden incluir videos para poder verlos. En cambio, si el objetivo es generar un documento PDF no se pueden incluir videos. Por tanto, el video de Youtube incluido en la última página producirá un error si se genera un PDF. Basta con comentarlo si se quiere generar el PDF.
 
 ```

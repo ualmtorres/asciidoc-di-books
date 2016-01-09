@@ -1,3 +1,42 @@
+////
+Codificación, idioma, tabla de contenidos, tipo de documento
+////
+:encoding: utf-8
+:lang: es
+:toc: right
+:toc-title: Tabla de contenidos
+:doctype: book
+:imagesdir: ./images
+
+////
+Nombre y título del trabajo
+////
+= Usando MongoDB y Java
+Gestión de Grandes Volúmenes de datos 
+Manuel Torres <mtorres@ual.es>
+
+
+// Entrar en modo no numerado de apartados
+:numbered!: 
+
+[abstract]
+////
+COLOCA A CONTINUACION EL RESUMEN
+////
+Introducción a la interacción con MongoDB mediante Java. Se describe cómo realizar las operaciones básicas, como son la conexión, selección de conexiones, operaciones CRUD sobre documentos, ordenación de resultados y uso del framework de agregación.
+
+////
+COLOCA A CONTINUACION LOS OBJETIVOS
+////
+.Objetivos
+* Establecer conexiones con bases de datos MongoDB
+* Realizar operaciones CRUD con MongoDB
+* Ordenar y limitar resultados
+* Realizar operaciones con el framework de agregación
+
+// Entrar en modo numerado de apartados
+:numbered:
+
 # Usando MongoDB y Java
 
 MongoDB nos ofrece gran cantidad de clientes para interactuar con él mediante gran cantidad de lenguajes de programación http://api.mongodb.org/[(Drivers MongoDB)].
@@ -138,3 +177,15 @@ Las operaciones relacionadas con el framework de agregación se realizan con el 
 +++
 
 Puedes https://github.com/ualmtorres/MongoDBJava[descargar el código de este tutorial] del GitHub de este proyecto.
+
+== Resumen
+Hemos descrirto las interacción básica con MongoDB mediante Java. Se ha descrito cómo realizar las operaciones básicas, como son la conexión, selección de conexiones, operaciones CRUD sobre documentos, ordenación de resultados y uso del framework de agregación.
+
+
+:numbered!:
+
+== Referencias
+[bibliography]
+* [[[mongodbjava]]] MongoDB. Getting Started with MongoDB (Java Edition). [online] Disponible en: https://docs.mongodb.org/getting-started/java.
+
+* [[[chodorow]]] Kristina Chodorow. 'MongoDB. The Definitive Guide'. O'Reilly. ISBN  978-1449344689.
