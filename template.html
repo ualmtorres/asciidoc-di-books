@@ -2140,29 +2140,19 @@ p {
 <div id="toc" class="toc2">
 <div id="toctitle">Tabla de contenidos</div>
 <ul class="sectlevel1">
-<li><a href="#truet-tulo-del-apartado">1. Título del apartado</a></li>
-<li><a href="#trueresumen">2. Resumen</a></li>
+<li><a href="#trueresumen">Resumen</a></li>
+<li><a href="#truet-tulo-del-apartado-autonumerado">1. Título del apartado (autonumerado)</a></li>
+<li><a href="#trueconclusiones">2. Conclusiones</a></li>
 <li><a href="#truereferencias">Referencias</a></li>
-<li><a href="#truesintaxis-b-sica">3. Sintaxis básica</a></li>
-<li><a href="#trueheader-level-1">4. Header Level 1</a>
-<ul class="sectlevel2">
-<li><a href="#trueheader-level-2">4.1. Header Level 2</a></li>
-<li><a href="#truelists">4.2. Lists</a></li>
-<li><a href="#truecode">4.3. Code</a></li>
-<li><a href="#truetables">4.4. Tables</a></li>
-<li><a href="#trueadmonition-blocks">4.5. Admonition blocks</a></li>
-</ul>
-</li>
 </ul>
 </div>
 </div>
 <div id="content">
-<div id="preamble">
+<div class="sect1">
+<h2 id="trueresumen"><a class="anchor" href="#trueresumen"></a>Resumen</h2>
 <div class="sectionbody">
-<div class="quoteblock abstract">
-<blockquote>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-</blockquote>
+<div class="paragraph">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 </div>
 <div class="ulist">
 <div class="title">Objetivos</div>
@@ -2181,7 +2171,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </div>
 </div>
 <div class="sect1">
-<h2 id="truet-tulo-del-apartado"><a class="anchor" href="#truet-tulo-del-apartado"></a>1. Título del apartado</h2>
+<h2 id="truet-tulo-del-apartado-autonumerado"><a class="anchor" href="#truet-tulo-del-apartado-autonumerado"></a>1. Título del apartado (autonumerado)</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -2192,7 +2182,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </div>
 </div>
 <div class="sect1">
-<h2 id="trueresumen"><a class="anchor" href="#trueresumen"></a>2. Resumen</h2>
+<h2 id="trueconclusiones"><a class="anchor" href="#trueconclusiones"></a>2. Conclusiones</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
@@ -2202,6 +2192,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <div class="sect1">
 <h2 id="truereferencias"><a class="anchor" href="#truereferencias"></a>Referencias</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>Atención!! El apartado <code>[bibliography]</code> sólo puede tener tras él un apartado <code>[index]</code>. Incluir otro texto no generaría un XML válido para el DocBook e impediría generar un PDF.</p>
+</div>
 <div class="ulist bibliography">
 <ul class="bibliography">
 <li>
@@ -2217,342 +2210,10 @@ ISBN 1-56592-580-7.</p>
 </div>
 </div>
 </div>
-<div class="sect1">
-<h2 id="truesintaxis-b-sica"><a class="anchor" href="#truesintaxis-b-sica"></a>3. Sintaxis básica</h2>
-<div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="trueheader-level-1"><a class="anchor" href="#trueheader-level-1"></a>4. Header Level 1</h2>
-<div class="sectionbody">
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code>## Header Level 1</code></pre>
-</div>
-</div>
-<div class="sect2">
-<h3 id="trueheader-level-2"><a class="anchor" href="#trueheader-level-2"></a>4.1. Header Level 2</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code>### Header Level 2</code></pre>
-</div>
-</div>
-<div class="sect3">
-<h4 id="trueheader-level-3"><a class="anchor" href="#trueheader-level-3"></a>4.1.1. Header Level 3</h4>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code>#### Header Level 3</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Paragraphs are separated by a blank line</p>
-</div>
-<div class="paragraph">
-<p>Another paragraph</p>
-</div>
-<div class="paragraph">
-<p><em>italic</em></p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code>_italic_</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p><strong>bold</strong></p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code>*bold*</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p><code>monospace</code></p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code>`monospace`</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p><a href="http://www.google.com" target="_blank">Hyperlink</a></p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code>http://www.google.com[Hyperlink^]</code></pre>
-</div>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="./images/di.png" alt="di.png">
-</div>
-<div class="title">Figure 1. Images are stored in <code>images</code> folder</div>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code>image::di.png[title = "Images are stored in `images` folder"]</code></pre>
-</div>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="http://asciidoctor.org/images/octocat.jpg" alt="octocat.jpg">
-</div>
-<div class="title">Figure 2. External image</div>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code>image::http://asciidoctor.org/images/octocat.jpg[title = "External image"]</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="truelists"><a class="anchor" href="#truelists"></a>4.2. Lists</h3>
-<div class="paragraph">
-<p><strong>Unordered lists</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>item 1</p>
-<div class="ulist">
-<ul>
-<li>
-<p>item 1.2</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>item 2</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code>* item 1
-** item 1.2
-* item 2</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p><strong>Ordered lists</strong></p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>item 1</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>item 1.1</p>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>item 2</p>
-</li>
-</ol>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code>. item 1
-.. item 1.1
-. item 2</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p><strong>Labeled lists</strong></p>
-</div>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">CPU</dt>
-<dd>
-<p>The brain of the computer.</p>
-</dd>
-<dt class="hdlist1">Hard drive</dt>
-<dd>
-<p>Permanent storage for operating system and/or user files.</p>
-</dd>
-<dt class="hdlist1">RAM</dt>
-<dd>
-<p>Temporarily stores information the CPU uses during operation.</p>
-</dd>
-</dl>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code>CPU:: The brain of the computer.
-Hard drive:: Permanent storage for operating system and/or user files.
-RAM:: Temporarily stores information the CPU uses during operation.</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="truecode"><a class="anchor" href="#truecode"></a>4.3. Code</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code>/**
- * @author John Doe &lt;john.doe@organization.com&gt;
- * @version 1.0
-*/
-package com.organization.project; <i class="conum" data-value="1"></i><b>(1)</b>
-
-public class SampleClass { <i class="conum" data-value="2"></i><b>(2)</b>
-	public static void main(String[] args) {
-		System.out.println("Hello");
-    }
-}</code></pre>
-</div>
-</div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>First annotation</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>Second annotation</td>
-</tr>
-</table>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code>[source]
-----
-/**
- * @author John Doe &lt;john.doe@organization.com&gt;
- * @version 1.0
-*/
-package com.organization.project; // &lt;1&gt;
-
-public class SampleClass { // &lt;2&gt;
-	public static void main(String[] args) {
-		System.out.println("Hello");
-    }
-}
-----
-&lt;1&gt; First annotation
-&lt;2&gt; Second annotation</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="truetables"><a class="anchor" href="#truetables"></a>4.4. Tables</h3>
-<table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 1. Using tables. <strong>Caution: Numbers in header set the column width</strong></caption>
-<colgroup>
-<col style="width: 16%;">
-<col style="width: 33%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">First</th>
-<th class="tableblock halign-left valign-top">Second</th>
-<th class="tableblock halign-left valign-top">Third</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Item 1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Description 1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Extended description 1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Item 2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Description 2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Extended description 2</p></td>
-</tr>
-</tbody>
-</table>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code>[cols="1,2,3", options="header"]
-.Using tables. **Caution: Numbers in header set the column width**
-|===
-|First
-|Second
-|Third
-
-|Item 1
-|Description 1
-|Extended description 1
-
-
-|Item 2
-|Description 2
-|Extended description 2
-|===</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="trueadmonition-blocks"><a class="anchor" href="#trueadmonition-blocks"></a>4.5. Admonition blocks</h3>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Sample NOTE block.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Sample TIP block. WARNING, CAUTION and IMPORTANT can also be used</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code>[IMPORTANT]
-====
-Sample NOTE block.
-====
-
-[TIP]
-====
-Sample TIP block. WARNING, CAUTION and IMPORTANT can also be used
-====</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p><strong>Videos</strong></p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe width="800" height="500" src="https://www.youtube.com/embed/2goMtz_vdtM?rel=0&amp;hl=es" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code>video::2goMtz_vdtM[youtube, width=800, height=500]</code></pre>
-</div>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-01-09 09:33:20 CET
+Last updated 2016-01-10 09:30:35 CET
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">

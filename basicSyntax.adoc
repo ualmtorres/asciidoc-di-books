@@ -296,3 +296,16 @@ Esto es una una cita a una referencia <<taoup>>
 - [[[walsh-muellner]]] Norman Walsh & Leonard Muellner.
   'DocBook - The Definitive Guide'. O'Reilly & Associates. 1999.
   ISBN 1-56592-580-7.
+
+```
+[bibliography]
+== Referencias
+
+Atención!! El apartado `[bibliography]` sólo puede tener tras él un apartado `[index]`. Incluir otro texto no generaría un XML válido para el DocBook e impediría generar un PDF.
+
+Esto es una una cita a una referencia <<taoup>>
+
+[bibliography]
+- [[[taoup]]] Eric Steven Raymond. 'The Art of Unix Programming'. Addison-Wesley. ISBN 0-13-142901-9.
+- [[[walsh-muellner]]] Norman Walsh & Leonard Muellner. 'DocBook - The Definitive Guide'. O'Reilly & Associates. 1999. ISBN 1-56592-580-7.
+```

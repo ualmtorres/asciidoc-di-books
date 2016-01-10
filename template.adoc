@@ -1,0 +1,92 @@
+////
+NO CAMBIAR!!
+Codificación, idioma, tabla de contenidos, tipo de documento
+////
+:encoding: utf-8
+:lang: es
+:toc: right
+:toc-title: Tabla de contenidos
+:doctype: book
+:imagesdir: ./images
+
+
+
+
+////
+Nombre y título del trabajo
+////
+# Article Name
+Subject Name 
+Author1 Name and Author2 Name <john.doe@organization.com> <john.doe@organization.com>
+
+
+// NO CAMBIAR!! (Entrar en modo no numerado de apartados)
+:numbered!: 
+
+
+[abstract]
+== Resumen
+////
+COLOCA A CONTINUACION EL RESUMEN
+////
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+
+////
+COLOCA A CONTINUACION LOS OBJETIVOS
+////
+.Objetivos
+* Objetivo 1
+* Objetivo 2
+* Objetivo 3
+
+
+
+// Entrar en modo numerado de apartados
+:numbered:
+
+
+//// 
+COLOCA A CONTINUACION EL TITULO DEL APARTADO
+////
+== Título del apartado (autonumerado)
+
+
+
+//// 
+COLOCA A CONTINUACION EL CONTENIDO DEL APARTADO
+////
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Esto es una una cita a una referencia <<taoup>>
+
+
+== Conclusiones
+
+////
+COLOCA A CONTINUACION EL RESUMEN O CONCLUSIONES
+////
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+
+
+
+
+
+// NO CAMBIAR!! (Entrar en modo no numerado de apartados)
+:numbered!:
+
+
+
+
+[bibliography]
+== Referencias
+
+Atención!! El apartado `[bibliography]` sólo puede tener tras él un apartado `[index]`. Incluir otro texto no generaría un XML válido para el DocBook e impediría generar un PDF.
+
+[bibliography]
+- [[[taoup]]] Eric Steven Raymond. 'The Art of Unix
+  Programming'. Addison-Wesley. ISBN 0-13-142901-9.
+- [[[walsh-muellner]]] Norman Walsh & Leonard Muellner.
+  'DocBook - The Definitive Guide'. O'Reilly & Associates. 1999.
+  ISBN 1-56592-580-7.
+
